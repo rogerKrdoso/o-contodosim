@@ -1,0 +1,35 @@
+.card {
+
+  margin-top: 1.5rem;
+
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .card-body {
+
+    .card-title {
+
+      position: relative;
+      margin-bottom: 1.5rem;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        height: 2px;
+        width: 10%;
+        background-color: $color-primary;
+      }
+    }
+
+    .card-text {
+      &:last-child {
+        text-align: justify;
+      }
+    }
+  }
+}
